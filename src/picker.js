@@ -198,7 +198,9 @@ CalenderCtrl.prototype.buildDateCells = function(){
 	if(self.dateCells[0][6].isDisabledDate && !self.dateCells[0][6].isCurrentMonth){
 		self.dateCells[0].splice(0);
 	}
-
+    if(self.dateCells[5][0].isDisabledDate && !self.dateCells[5][0].isCurrentMonth){
+        self.dateCells[5].splice(0);
+    }
 };
 
 CalenderCtrl.prototype.changePeriod = function(c){
